@@ -9,6 +9,27 @@
     align-items: center;
 }
 
+/* #card_details {
+    color: white;
+} */
+
+.flip h1, .flip p {
+    color : black;
+}
+
+.dark .flip h1, .dark .flip p {
+    color: white;
+}
+
+/* 
+.light-mode #card_details {
+    color: black;
+}
+
+.dark-mode #card_details {
+    color: white;
+} */
+
 #about_me {
     position: relative;
     line-height: 1.4;
@@ -48,4 +69,8 @@
 
 #social-icons a:hover {
     color: #007bff; 
+}
+
+.dark #social-icons a {
+    color: white;
 }

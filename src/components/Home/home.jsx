@@ -9,7 +9,7 @@ import { faGithub, faLinkedin, faDiscord } from '@fortawesome/free-brands-svg-ic
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 
-function Home() {
+function Home({isDarkMode}) {
     const [displayedText, setDisplayedText] = useState('');
     const [displayedText1, setDisplayedText1] = useState('');
     const intro_line = "Hi!";
@@ -45,11 +45,10 @@ function Home() {
         }
     }, [displayedText, intro_line2]);
 
-
     return (
       <Container id="hello">
-        <Card className='bg-transparent border-0'>
-          <Card.Body className='fixed-height'>
+        <Card className= {`bg-transparent border-0 ${isDarkMode ? 'dark' : ''}`}>
+          <Card.Body className = {`flip`}>
             <h1>{displayedText}</h1>
             <h1>{displayedText1}</h1>
             <p id = "about_me">I am a full-stack developer, software engineer, and ML researcher. I love envisioning, prototyping, and implementing my ideas
