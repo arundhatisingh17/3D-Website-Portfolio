@@ -61,6 +61,7 @@
 }
 
 #social-icons a {
+    display: flex;
     color: black;
     text-decoration: none;
     margin: 0 17px; 
@@ -74,3 +75,17 @@
 .dark #social-icons a {
     color: white;
 }
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 0.5s forwards; /* Adjust duration as needed */
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
