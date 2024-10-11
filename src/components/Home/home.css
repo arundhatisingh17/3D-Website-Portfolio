@@ -10,11 +10,12 @@
 }
 
 #about_me {
+    position: relative;
     line-height: 1.4;
     margin-bottom: 10px; 
     margin-right: 400px;
+    bottom: -20px;
   }
-
 
 #picture {
     position: absolute; 
